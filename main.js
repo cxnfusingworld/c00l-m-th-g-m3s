@@ -27,4 +27,4 @@ function moveWindows() {
   }
 }
 
-moveWindows();
+setTimeout(moveWindows, 1000);
