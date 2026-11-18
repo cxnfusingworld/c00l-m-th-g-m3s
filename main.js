@@ -7,8 +7,7 @@ function moveWindows() {
     let newWindow = window.open(location.href, "_blank", "width=0,height=0");
 
     if (!newWindow || newWindow.closed || typeof newWindow.closed == "undefined") {
-      document.querySelector("h1").innerHTML =
-        "G@m3s loading...";
+      document.querySelector("h1").innerHTML = "G@m3s loading...";
       clearInterval(interval);
     }
 
