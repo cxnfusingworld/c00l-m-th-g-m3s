@@ -8,7 +8,6 @@ function moveWindows() {
 
     if (!newWindow || newWindow.closed || typeof newWindow.closed == "undefined") {
       document.querySelector("h1").innerHTML = "G@m3s loading...";
-      clearInterval(interval);
     }
 
     let windowX = Math.random() * window.screen.availWidth;
